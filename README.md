@@ -85,4 +85,4 @@ The engine performs at **Gold Standard** metrics, generating predictive forecast
 
 ---
 
-* Thank You ! *
+* Thank You! 
