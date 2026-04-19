@@ -1,7 +1,7 @@
 # ⚡ Energy Baseline Model for Building and Industries
 ### Premier AI-Driven Energy Orchestration & Industrial Baseline Reporting for India
 
-[![Live Application](https://img.shields.io/badge/Live_Dashboard-Launch_Streamlit-F97316?style=for-the-badge&logo=streamlit)](INSERT_YOUR_STREAMLIT_URL_HERE)
+[![Live Application](https://img.shields.io/badge/Live_Dashboard-Launch_Streamlit-F97316?style=for-the-badge&logo=streamlit)](https://energy-baseline-model-for-building-industries.streamlit.app/)
 
 > **Supervisor:** Dr. Sivasankari Sundaram  
 > **Creator & Researcher:** Saifuddin Farooqui (BTP Research Division)
@@ -11,7 +11,7 @@
 ## 🌐 Live Web Application
 Experience the model live in your browser! The Streamlit interface was chosen specifically because it offers unparalleled dynamic rendering—allowing real-time interaction with 16 local Indian cities, diverse building configurations, and instantaneous financial/carbon benchmarking without a single line of code.
 
-👉 **[Access the Live AI Dashboard Here](INSERT_YOUR_STREAMLIT_URL_HERE)** 
+👉 **[Access the Live AI Dashboard Here](https://energy-baseline-model-for-building-industries.streamlit.app/)** 
 
 ---
 
@@ -85,4 +85,4 @@ The engine performs at **Gold Standard** metrics, generating predictive forecast
 
 ---
 
-*This application guarantees an enterprise-grade experience. Submitted research metrics are logged locally for peer-review validation.*
+* Thank You ! *
