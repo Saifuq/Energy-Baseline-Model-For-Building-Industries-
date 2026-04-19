@@ -1313,10 +1313,8 @@ with t_occ:
             xaxis=dict(title="Hour of Day", gridcolor="#EAEAEA"),
             title=dict(text=f"Hourly Average Load — {bldg}", font=dict(family="Georgia,serif",size=13)),
         )
-        fig_dual.update_yaxes(title_text="Avg Predicted kWh", secondary_y=False,
-                               gridcolor="#EAEAEA", titlefont=dict(family="Georgia,serif"))
-        fig_dual.update_yaxes(title_text="Occupancy Flag (%)", secondary_y=True,
-                               titlefont=dict(family="Georgia,serif"))
+        fig_dual.update_yaxes(title=dict(text="Avg Predicted kWh", font=dict(family="Georgia,serif")), secondary_y=False, gridcolor="#EAEAEA")
+        fig_dual.update_yaxes(title=dict(text="Occupancy Flag (%)", font=dict(family="Georgia,serif")), secondary_y=True)
         st.plotly_chart(fig_dual, use_container_width=True)
 
     with oc2:
