@@ -1,0 +1,24 @@
+3: Creator & Researcher: Saifuddin Farooqui
+642:     st.caption("Algorithm: XGBoost (hist)  \nFeatures: 31  \nTraining: ASHRAE Kaggle 2.5M rows  \nValidation: NASA POWER + IMD Synthetic")
+646:     <b>Researcher & Creator</b><br>
+667:       <div class="navbar-creator">Saifuddin Farooqui &nbsp;|&nbsp; BTP Research Division</div>
+907:           Based on the <b>{zone}</b> climate zone, our research recommends the following high-impact 
+943:     # ── Research Whitepaper Section ──
+944:     st.markdown('<div class="sec-head animate-fade">📚 Research Methodology & Whitepaper</div>', unsafe_allow_html=True)
+945:     with st.expander("🔍 View Research Methodology (ASHRAE G-14)"):
+949:         <p><b>Author:</b> Saifuddin Farooqui (BTP Research Project)</p>
+953:         ASHRAE Great Energy Predictor dataset. The model captures non-linear thermophysical 
+958:           <li><b>Training:</b> ASHRAE Global Building Dataset (2.5M time-series rows).</li>
+965:         ASHRAE Guideline 14 requirements for calibrated simulation models.
+1007:           Audit based on ASHRAE Guideline 14 methodology established by Saifuddin Farooqui.
+1186:     st.markdown('<div class="sec-sub">ASHRAE Standard 55 defines the human comfort zone between 20°C and 25.5°C with 30-60% RH. This plot shows how many hours {city} stays outside this zone.</div>', unsafe_allow_html=True)
+1397:       <tr><td>ACH (Ventilation)</td><td><b>{pr['ACH']} /hr</b></td><td>ASHRAE 62.1</td><td>Air Changes per Hour</td></tr>
+1715:     per-feature contributions — satisfying ASHRAE Guideline 14 transparency requirements
+1746:   <div class="sec-label">📩 RESEARCH FEEDBACK</div>
+1749:     Your insights as an Energy Auditor, Architect, or Researcher help calibrate this baseline model. 
+1758:         with fb_col1: fb_name = st.text_input("Full Name (Researcher/Auditor)", placeholder="e.g. Dr. A.P.J. Abdul Kalam")
+1760:         with fb_col3: fb_email = st.text_input("Email Address", placeholder="e.g. researcher@edu.in")
+1764:             fb_role   = st.selectbox("Current Role", ["Energy Auditor","Architect","Student","Researcher","Other"])
+1767:             fb_obs    = st.text_area("Research Observations & Technical Suggestions", height=150)
+1771:             fb_submit = st.form_submit_button("🚀 SUBMIT RESEARCH AUDIT", use_container_width=True)
+1790:   Creator & Researcher: <b>Saifuddin Farooqui</b> &nbsp;·&nbsp;

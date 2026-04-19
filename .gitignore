@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+dist/
+build/
+*.egg-info/
+
+# Streamlit
+.streamlit/
+static/
+
+# Data & Models
+*.json
+*.csv
+!xgboost_india_model.json
+!indian_cities_weather_cache.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+*.zip
+*.pptx
+*.png
+ashrae-energy-prediction/
+fast-ai*

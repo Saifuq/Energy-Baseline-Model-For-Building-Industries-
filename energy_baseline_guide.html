@@ -1,0 +1,491 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans);font-size:14px;color:var(--color-text-primary);line-height:1.6}
+.tabs{display:flex;gap:0;border-bottom:0.5px solid var(--color-border-tertiary);overflow-x:auto;margin-bottom:1.5rem}
+.tab{padding:10px 16px;font-size:13px;cursor:pointer;border:none;background:none;color:var(--color-text-secondary);border-bottom:2px solid transparent;white-space:nowrap;transition:all .15s}
+.tab.active{color:var(--color-text-primary);border-bottom:2px solid var(--color-border-primary);font-weight:500}
+.tab:hover:not(.active){color:var(--color-text-primary);background:var(--color-background-secondary)}
+.card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.25rem;margin-bottom:12px}
+.card.featured{border:1.5px solid #378ADD}
+.card-header{display:flex;align-items:center;gap:10px;cursor:pointer}
+.badge{font-size:11px;font-weight:500;padding:3px 10px;border-radius:var(--border-radius-md)}
+.badge-blue{background:var(--color-background-info);color:var(--color-text-info)}
+.badge-green{background:var(--color-background-success);color:var(--color-text-success)}
+.badge-amber{background:var(--color-background-warning);color:var(--color-text-warning)}
+.badge-danger{background:var(--color-background-danger);color:var(--color-text-danger)}
+.pill{display:inline-flex;align-items:center;font-size:11px;padding:2px 8px;border-radius:20px;border:0.5px solid var(--color-border-secondary);color:var(--color-text-secondary);margin:2px}
+.detail{display:none;margin-top:12px;padding-top:12px;border-top:0.5px solid var(--color-border-tertiary)}
+.detail.open{display:block}
+.row{display:flex;gap:8px;align-items:flex-start;margin-bottom:8px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--color-border-primary);flex-shrink:0;margin-top:7px}
+.dot-blue{background:#378ADD}
+.dot-green{background:#1D9E75}
+.dot-amber{background:#BA7517}
+.dot-red{background:#E24B4A}
+.code{font-family:var(--font-mono);font-size:12px;background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:10px 14px;margin:8px 0;line-height:1.7;color:var(--color-text-primary)}
+.metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:12px 0}
+.metric{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:12px;text-align:center}
+.metric-val{font-size:20px;font-weight:500;color:var(--color-text-primary)}
+.metric-lbl{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
+.step{display:flex;gap:14px;margin-bottom:16px;align-items:flex-start}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--color-background-info);color:var(--color-text-info);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;flex-shrink:0}
+.var-card{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:12px;margin-bottom:10px;border-left:3px solid}
+.bar-wrap{margin-bottom:10px}
+.bar-label{display:flex;justify-content:space-between;font-size:12px;color:var(--color-text-secondary);margin-bottom:4px}
+.bar-bg{background:var(--color-background-secondary);border-radius:20px;height:8px;overflow:hidden}
+.bar-fill{height:8px;border-radius:20px;transition:width .5s}
+.section-title{font-size:16px;font-weight:500;margin-bottom:12px;padding-bottom:8px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.info-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:0.5px solid var(--color-border-tertiary);font-size:13px}
+.info-row:last-child{border-bottom:none}
+.link{color:var(--color-text-info);text-decoration:none;font-size:12px}
+.link:hover{text-decoration:underline}
+.summary-hero{background:var(--color-background-info);border-radius:var(--border-radius-lg);padding:1.25rem;margin-bottom:1rem;border:0.5px solid var(--color-border-info)}
+.chevron{font-size:10px;color:var(--color-text-secondary);margin-left:auto;transition:transform .2s}
+.chevron.open{transform:rotate(180deg)}
+</style>
+
+<div style="padding:1rem 0">
+
+<div style="margin-bottom:1.5rem">
+  <div style="font-size:18px;font-weight:500;margin-bottom:4px">Energy baseline model</div>
+  <div style="font-size:13px;color:var(--color-text-secondary)">Complete algorithm & dataset guide — buildings and industries</div>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showTab('algo',this)">Algorithms</button>
+  <button class="tab" onclick="showTab('best',this)">Best pick</button>
+  <button class="tab" onclick="showTab('data',this)">Datasets</button>
+  <button class="tab" onclick="showTab('download',this)">Download guide</button>
+  <button class="tab" onclick="showTab('example',this)">Worked example</button>
+  <button class="tab" onclick="showTab('summary',this)">Summary</button>
+</div>
+
+<div id="tab-algo">
+  <div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:14px">Click any card to expand. Star rating = complexity (1 star = simple, 5 = advanced).</div>
+
+  <div id="algo-list"></div>
+</div>
+
+<div id="tab-best" style="display:none">
+  <div class="summary-hero">
+    <div style="font-size:15px;font-weight:500;color:var(--color-text-info);margin-bottom:6px">Recommended: XGBoost</div>
+    <div style="font-size:13px;color:var(--color-text-info)">Proven winner of the ASHRAE Kaggle competition — the world's largest energy prediction contest with 4,370 teams.</div>
+  </div>
+
+  <div class="section-title">Why XGBoost is #1 for this project</div>
+  <div class="card">
+    <div class="row"><div class="dot dot-blue"></div><div>Won the ASHRAE Kaggle competition — largest ever energy ML contest, 4,370 teams competing</div></div>
+    <div class="row"><div class="dot dot-blue"></div><div>Works on both buildings and industrial datasets without changing the code</div></div>
+    <div class="row"><div class="dot dot-blue"></div><div>Handles all 4 variable types in one model: weather numbers, occupancy counts, time categories, production ratios</div></div>
+    <div class="row"><div class="dot dot-blue"></div><div>Automatically handles missing data and outliers — real energy data is always messy</div></div>
+    <div class="row"><div class="dot dot-blue"></div><div>Gives feature importance ranking — tells you which variable drives energy the most</div></div>
+    <div class="row"><div class="dot dot-blue"></div><div>Install with one command: <code class="code" style="display:inline;padding:1px 6px">pip install xgboost scikit-learn pandas</code></div></div>
+  </div>
+
+  <div class="section-title" style="margin-top:1.5rem">Simple analogy</div>
+  <div class="card">
+    <div style="font-size:13px;line-height:1.7">Imagine a student taking an energy exam 1,000 times. After each attempt, they study only the questions they got wrong. By the 1,000th attempt, they have corrected every mistake and become an expert. That is XGBoost — 1,000 small "trees" each fixing the previous one's errors.</div>
+  </div>
+
+  <div class="section-title" style="margin-top:1.5rem">Target accuracy</div>
+  <div class="metric-grid">
+    <div class="metric"><div class="metric-val">&gt; 0.90</div><div class="metric-lbl">R² score</div></div>
+    <div class="metric"><div class="metric-val">&lt; 5%</div><div class="metric-lbl">MAPE error</div></div>
+    <div class="metric"><div class="metric-val">&lt; 15%</div><div class="metric-lbl">CV-RMSE</div></div>
+    <div class="metric"><div class="metric-val">&lt; ±5%</div><div class="metric-lbl">MBE bias</div></div>
+  </div>
+
+  <div class="section-title" style="margin-top:1.5rem">How XGBoost uses all 4 variables</div>
+  <div class="var-card" style="border-color:#378ADD"><div style="font-size:12px;font-weight:500;color:var(--color-text-info);margin-bottom:4px">Weather — temperature = 38°C</div><div style="font-size:13px;color:var(--color-text-secondary)">XGBoost learns: very high temp → very high cooling energy demand</div></div>
+  <div class="var-card" style="border-color:#1D9E75"><div style="font-size:12px;font-weight:500;color:var(--color-text-success);margin-bottom:4px">Occupancy — 200 people in building</div><div style="font-size:13px;color:var(--color-text-secondary)">XGBoost learns: more people → more lighting + plug load + cooling</div></div>
+  <div class="var-card" style="border-color:#BA7517"><div style="font-size:12px;font-weight:500;color:var(--color-text-warning);margin-bottom:4px">Time — 2 AM, public holiday</div><div style="font-size:13px;color:var(--color-text-secondary)">XGBoost learns: late night + holiday → base load only, very low</div></div>
+  <div class="var-card" style="border-color:#a78bfa"><div style="font-size:12px;font-weight:500;color:#7c3aed;margin-bottom:4px">Production — 500 units per hour</div><div style="font-size:13px;color:var(--color-text-secondary)">XGBoost learns: high production → high motor energy + extra HVAC load</div></div>
+
+  <div class="section-title" style="margin-top:1.5rem">Quick comparison vs other algorithms</div>
+  <div class="card">
+    <table style="width:100%;font-size:13px;border-collapse:collapse">
+      <thead><tr style="color:var(--color-text-secondary);font-size:12px"><th style="text-align:left;padding:6px 0;font-weight:500">Algorithm</th><th style="text-align:center;padding:6px 0;font-weight:500">Ease</th><th style="text-align:center;padding:6px 0;font-weight:500">Accuracy</th><th style="text-align:left;padding:6px 8px;font-weight:500">When to use</th></tr></thead>
+      <tbody id="compare-table"></tbody>
+    </table>
+  </div>
+</div>
+
+<div id="tab-data" style="display:none">
+  <div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:14px">Click any card to see details. The Kaggle ASHRAE dataset is our top recommendation.</div>
+  <div id="dataset-list"></div>
+</div>
+
+<div id="tab-download" style="display:none">
+  <div class="section-title">How to download the Kaggle ASHRAE dataset (step by step)</div>
+  <div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:1rem">Total size: ~2.5 GB &nbsp;|&nbsp; Format: CSV &nbsp;|&nbsp; Requires a free Kaggle account</div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div><div style="font-weight:500;margin-bottom:4px">Create a free Kaggle account</div><div style="font-size:13px;color:var(--color-text-secondary)">Go to kaggle.com → click Register → sign up with email or Google. Completely free.</div></div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div><div style="font-weight:500;margin-bottom:4px">Go to the competition page and join</div><div style="font-size:13px;color:var(--color-text-secondary)">Visit the URL below, click "Join Competition", accept the rules.</div><div class="code">https://www.kaggle.com/c/ashrae-energy-prediction/data</div></div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div><div style="font-weight:500;margin-bottom:4px">Download these 3 files manually</div>
+      <div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:8px">On the Data page, click the download icon next to each file.</div>
+      <div class="card" style="padding:10px 14px">
+        <div class="info-row"><span style="font-family:var(--font-mono);font-size:12px">train.csv</span><span style="color:var(--color-text-secondary);font-size:12px">Energy meter readings (target variable)</span></div>
+        <div class="info-row"><span style="font-family:var(--font-mono);font-size:12px">building_metadata.csv</span><span style="color:var(--color-text-secondary);font-size:12px">Building type, floor area, age</span></div>
+        <div class="info-row"><span style="font-family:var(--font-mono);font-size:12px">weather_train.csv</span><span style="color:var(--color-text-secondary);font-size:12px">Temperature, humidity, wind, dew point</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
+    <div><div style="font-weight:500;margin-bottom:4px">Or use the Kaggle API in Google Colab (free)</div>
+      <div class="code">pip install kaggle<br>
+# Upload kaggle.json from your account settings<br>
+from google.colab import files; files.upload()<br>
+!mkdir -p ~/.kaggle && cp kaggle.json ~/.kaggle/<br>
+!chmod 600 ~/.kaggle/kaggle.json<br>
+!kaggle competitions download -c ashrae-energy-prediction</div>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">5</div>
+    <div><div style="font-weight:500;margin-bottom:4px">Load and merge in Python</div>
+      <div class="code">import pandas as pd<br>
+train   = pd.read_csv('train.csv')<br>
+weather = pd.read_csv('weather_train.csv')<br>
+bldg    = pd.read_csv('building_metadata.csv')<br>
+<br>
+df = train.merge(bldg, on='building_id', how='left')<br>
+df['timestamp'] = pd.to_datetime(df['timestamp'])<br>
+df = df.merge(weather, on=['site_id','timestamp'], how='left')<br>
+print(df.shape)   # (20216100, ~15 columns)<br>
+print(df.head())</div>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">6</div>
+    <div><div style="font-weight:500;margin-bottom:4px">You are ready — all 4 variable groups are now in one dataframe</div>
+      <div style="font-size:13px;color:var(--color-text-secondary)">You have: meter_reading (target) + air_temperature + hour + building_type + floor_area. Every variable group is covered.</div>
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:1.5rem">Dataset file structure</div>
+  <div class="card">
+    <div class="info-row"><span style="font-weight:500">Column</span><span style="font-weight:500">Variable group</span></div>
+    <div class="info-row"><span style="font-family:var(--font-mono);font-size:12px">air_temperature, dew_temperature, wind_speed</span><span class="badge badge-blue">Weather</span></div>
+    <div class="info-row"><span style="font-family:var(--font-mono);font-size:12px">primary_use, square_feet</span><span class="badge badge-green">Occupancy proxy</span></div>
+    <div class="info-row"><span style="font-family:var(--font-mono);font-size:12px">timestamp → hour, day, month</span><span class="badge badge-amber">Time effects</span></div>
+    <div class="info-row"><span style="font-family:var(--font-mono);font-size:12px">meter_reading</span><span style="font-size:12px;color:var(--color-text-secondary)">Target (kWh to predict)</span></div>
+  </div>
+</div>
+
+<div id="tab-example" style="display:none">
+  <div class="section-title">Worked example: predicting office building energy at 2 PM on a hot Tuesday</div>
+
+  <div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:1rem">Scenario: 5-floor office building, June, 38°C outside, full occupancy</div>
+
+  <div class="section-title" style="font-size:14px">Step 1 — collect your 4 input variables</div>
+  <div class="var-card" style="border-color:#378ADD">
+    <div style="font-size:12px;font-weight:500;color:var(--color-text-info);margin-bottom:6px">Variable 1: weather</div>
+    <div class="row" style="margin-bottom:4px"><div class="dot dot-blue" style="margin-top:5px"></div><div style="font-size:13px">Air temperature = <strong>38°C</strong> — very hot, expect high AC load</div></div>
+    <div class="row" style="margin-bottom:4px"><div class="dot dot-blue" style="margin-top:5px"></div><div style="font-size:13px">Relative humidity = <strong>65%</strong> — humid, extra dehumidification needed</div></div>
+    <div class="row" style="margin-bottom:0"><div class="dot dot-blue" style="margin-top:5px"></div><div style="font-size:13px">Solar radiation = <strong>850 W/m²</strong> — high sun, solar heat gain through windows</div></div>
+  </div>
+  <div class="var-card" style="border-color:#1D9E75">
+    <div style="font-size:12px;font-weight:500;color:var(--color-text-success);margin-bottom:6px">Variable 2: occupancy and behavior</div>
+    <div class="row" style="margin-bottom:4px"><div class="dot dot-green" style="margin-top:5px"></div><div style="font-size:13px">People in building = <strong>320 persons</strong> — full occupancy</div></div>
+    <div class="row" style="margin-bottom:4px"><div class="dot dot-green" style="margin-top:5px"></div><div style="font-size:13px">Lighting = <strong>100% on</strong> — all floors occupied</div></div>
+    <div class="row" style="margin-bottom:0"><div class="dot dot-green" style="margin-top:5px"></div><div style="font-size:13px">Thermostat setpoint = <strong>22°C</strong> — compressor working hard</div></div>
+  </div>
+  <div class="var-card" style="border-color:#BA7517">
+    <div style="font-size:12px;font-weight:500;color:var(--color-text-warning);margin-bottom:6px">Variable 3: time effects</div>
+    <div class="row" style="margin-bottom:4px"><div class="dot dot-amber" style="margin-top:5px"></div><div style="font-size:13px">Hour = <strong>14 (2 PM)</strong> — peak business hours, maximum load</div></div>
+    <div class="row" style="margin-bottom:4px"><div class="dot dot-amber" style="margin-top:5px"></div><div style="font-size:13px">Day = <strong>Tuesday</strong> — weekday, full operation</div></div>
+    <div class="row" style="margin-bottom:0"><div class="dot dot-amber" style="margin-top:5px"></div><div style="font-size:13px">Month = <strong>June</strong> — peak summer cooling season</div></div>
+  </div>
+  <div class="var-card" style="border-color:#a78bfa">
+    <div style="font-size:12px;font-weight:500;margin-bottom:6px" style="color:#7c3aed">Variable 4: production / operations</div>
+    <div class="row" style="margin-bottom:4px"><div class="dot" style="background:#a78bfa;margin-top:5px"></div><div style="font-size:13px">Server load = <strong>85%</strong> — high compute, extra heat → more cooling</div></div>
+    <div class="row" style="margin-bottom:4px"><div class="dot" style="background:#a78bfa;margin-top:5px"></div><div style="font-size:13px">Meeting rooms = <strong>8 of 10 occupied</strong> — projectors, extra lighting</div></div>
+    <div class="row" style="margin-bottom:0"><div class="dot" style="background:#a78bfa;margin-top:5px"></div><div style="font-size:13px">Elevator usage = <strong>high</strong> — reflects full building activity</div></div>
+  </div>
+
+  <div class="section-title" style="font-size:14px;margin-top:1.5rem">Step 2 — XGBoost processes the inputs</div>
+  <div class="code">
+# XGBoost receives this single row:<br>
+temp=38, humidity=65, solar=850,<br>
+hour=14, weekday=1, month=6,<br>
+occupancy=320, floor_area=8500,<br>
+server_load=85<br>
+<br>
+# Runs through 1,000 decision trees → average result:<br>
+<span style="color:var(--color-text-success);font-weight:500">Predicted energy = 1,842 kWh</span>
+  </div>
+
+  <div class="section-title" style="font-size:14px;margin-top:1.5rem">Step 3 — what the facility manager sees</div>
+  <div class="card">
+    <div class="row"><div class="dot dot-green" style="margin-top:6px"></div><div style="font-size:13px">Historical baseline for this exact condition = <strong>1,800 kWh</strong></div></div>
+    <div class="row"><div class="dot dot-green" style="margin-top:6px"></div><div style="font-size:13px">Predicted = 1,842 kWh → 2.3% above baseline → <strong>acceptable</strong> (within 5% tolerance)</div></div>
+    <div class="row"><div class="dot dot-red" style="margin-top:6px"></div><div style="font-size:13px">If actual meter reads 2,400 kWh → 33% above prediction → <strong>energy leak detected!</strong></div></div>
+    <div class="row"><div class="dot dot-green" style="margin-top:6px"></div><div style="font-size:13px">Action: check if extra HVAC units running, find faulty equipment, rescheduled production</div></div>
+  </div>
+
+  <div class="section-title" style="font-size:14px;margin-top:1.5rem">Step 4 — feature importance (what matters most?)</div>
+  <div class="card" id="feat-bars"></div>
+</div>
+
+<div id="tab-summary" style="display:none">
+  <div class="summary-hero">
+    <div style="font-size:15px;font-weight:500;color:var(--color-text-info);margin-bottom:6px">Final verdict: XGBoost + Kaggle ASHRAE dataset</div>
+    <div style="font-size:13px;color:var(--color-text-info);line-height:1.7">Use XGBoost on the Kaggle ASHRAE dataset with all 4 variables (weather + occupancy + time + production) to predict building energy consumption and detect waste — the same approach used by world-class data scientists.</div>
+  </div>
+
+  <div class="two-col" style="margin-bottom:1rem">
+    <div class="card">
+      <div style="font-weight:500;margin-bottom:10px;font-size:14px">Algorithm — XGBoost</div>
+      <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px">Won ASHRAE Kaggle 2019 with 4,370 teams competing</div></div>
+      <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px">Handles all 4 variable groups in one model</div></div>
+      <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px">Built-in feature importance — no extra code needed</div></div>
+      <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px">Works for buildings and industrial facilities</div></div>
+      <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px">Handles missing data and outliers automatically</div></div>
+    </div>
+    <div class="card">
+      <div style="font-weight:500;margin-bottom:10px;font-size:14px">Dataset — Kaggle ASHRAE</div>
+      <div class="row"><div class="dot dot-green"></div><div style="font-size:13px">1,448 real buildings, 20 million hourly readings</div></div>
+      <div class="row"><div class="dot dot-green"></div><div style="font-size:13px">16 countries, 3 full years (2016–2018)</div></div>
+      <div class="row"><div class="dot dot-green"></div><div style="font-size:13px">All 4 variable groups already included</div></div>
+      <div class="row"><div class="dot dot-green"></div><div style="font-size:13px">Free with a Kaggle account (no payment needed)</div></div>
+      <div class="row"><div class="dot dot-green"></div><div style="font-size:13px">Proven benchmark — 4,370 teams tested it</div></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:1rem">
+    <div style="font-weight:500;margin-bottom:12px;font-size:14px">Download in 5 steps</div>
+    <div class="row"><div class="step-num" style="width:22px;height:22px;font-size:12px">1</div><div style="font-size:13px">Register free at <a href="https://kaggle.com" class="link">kaggle.com</a></div></div>
+    <div class="row"><div class="step-num" style="width:22px;height:22px;font-size:12px">2</div><div style="font-size:13px">Go to <a href="https://www.kaggle.com/c/ashrae-energy-prediction" class="link">kaggle.com/c/ashrae-energy-prediction</a> → Join Competition</div></div>
+    <div class="row"><div class="step-num" style="width:22px;height:22px;font-size:12px">3</div><div style="font-size:13px">Download: <code style="font-family:var(--font-mono);font-size:11px">train.csv</code>, <code style="font-family:var(--font-mono);font-size:11px">weather_train.csv</code>, <code style="font-family:var(--font-mono);font-size:11px">building_metadata.csv</code></div></div>
+    <div class="row"><div class="step-num" style="width:22px;height:22px;font-size:12px">4</div><div style="font-size:13px">Load in Python with <code style="font-family:var(--font-mono);font-size:11px">pd.read_csv()</code> → merge on building_id + timestamp</div></div>
+    <div class="row"><div class="step-num" style="width:22px;height:22px;font-size:12px">5</div><div style="font-size:13px">Train XGBoost → evaluate with R² and MAPE → look for gaps = energy leaks</div></div>
+  </div>
+
+  <div class="card" style="margin-bottom:1rem">
+    <div style="font-weight:500;margin-bottom:12px;font-size:14px">Testing procedure</div>
+    <div class="row"><div class="dot dot-amber"></div><div style="font-size:13px">Split data: use 2016–2017 for training, 2018 for testing (80/20 rule)</div></div>
+    <div class="row"><div class="dot dot-amber"></div><div style="font-size:13px">Fit XGBoost on training data with all 4 variable features as inputs</div></div>
+    <div class="row"><div class="dot dot-amber"></div><div style="font-size:13px">Predict on test data → compare predicted vs actual meter readings</div></div>
+    <div class="row"><div class="dot dot-amber"></div><div style="font-size:13px">Calculate MAPE (% error) and R² — aim for MAPE &lt; 5%</div></div>
+    <div class="row"><div class="dot dot-amber"></div><div style="font-size:13px">Plot actual vs predicted — large gaps signal energy leaks or anomalies</div></div>
+  </div>
+
+  <div class="metric-grid">
+    <div class="metric"><div class="metric-val" style="color:var(--color-text-info)">&gt; 0.90</div><div class="metric-lbl">R² target</div></div>
+    <div class="metric"><div class="metric-val" style="color:var(--color-text-success)">&lt; 5%</div><div class="metric-lbl">MAPE target</div></div>
+    <div class="metric"><div class="metric-val" style="color:var(--color-text-warning)">&lt; 15%</div><div class="metric-lbl">CV-RMSE (ASHRAE)</div></div>
+    <div class="metric"><div class="metric-val" style="color:var(--color-text-danger)">&lt; ±5%</div><div class="metric-lbl">MBE bias</div></div>
+  </div>
+
+  <div class="card" style="margin-top:1rem">
+    <div style="font-weight:500;margin-bottom:10px;font-size:14px">Why this matters</div>
+    <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px">Buildings waste 30% energy on average — a good model identifies exactly where and when</div></div>
+    <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px">Factories using energy baseline models reduce energy cost per unit by 10–25%</div></div>
+    <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px">Energy efficiency directly reduces CO₂ emissions — measurable climate impact</div></div>
+    <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px">Final output: a dashboard where facility managers see real-time energy alerts and recommendations</div></div>
+  </div>
+
+  <button onclick="sendPrompt('Can you give me the complete XGBoost Python code for the ASHRAE energy dataset with all 4 variables?')" style="margin-top:1rem;width:100%;padding:10px;font-size:13px">Get the complete XGBoost Python code ↗</button>
+</div>
+
+</div>
+
+<script>
+const algos=[
+  {num:"A1",name:"Multiple linear regression",nick:"The straight-line guesser",ease:1,badge:"beginner-friendly",badgeClass:"badge-green",
+   analogy:"Like drawing one best straight line through a scatter plot. Simple, fast, and easy to read.",
+   how:"Finds a formula: Energy = a × Temperature + b × Occupancy + c × Hour + d. Each variable gets a weight. Multiply and add — you get predicted energy.",
+   best:"Starting point / baseline model. Works well when energy changes smoothly with temperature. ASHRAE Guideline 14 uses this as its core method.",
+   vars:"Temperature (weather), hour of day (time), occupancy count"},
+  {num:"A2",name:"Change-point regression",nick:"The threshold detector",ease:2,badge:"beginner-friendly",badgeClass:"badge-green",
+   analogy:"Like MLR, but it knows energy behaves differently above and below a temperature threshold — below 18°C we heat, above 24°C we cool, in between we do nothing.",
+   how:"Splits data at a 'change point' temperature. Fits two separate lines — one for heating season, one for cooling. Standard method in ASHRAE Guideline 14.",
+   best:"Buildings where HVAC switching between heating and cooling is the main energy driver — offices, hospitals, schools.",
+   vars:"Dry bulb temperature, heating degree days, cooling degree days"},
+  {num:"A3",name:"Variable-base degree-day (VBDD)",nick:"The seasonal counter",ease:2,badge:"beginner-friendly",badgeClass:"badge-green",
+   analogy:"Imagine counting how many degrees above or below comfort each day adds up. More uncomfortable days = more energy. Like a weather stress score.",
+   how:"Calculates HDD and CDD from temperature. Energy = a × HDD + b × CDD + c. The base comfort temperature is tuned to find the best fit.",
+   best:"Monthly or annual energy models. Very useful when you only have monthly utility bills, not hourly data.",
+   vars:"Temperature and degree days only — a simple 1–2 variable model"},
+  {num:"A4",name:"Random forest",nick:"The crowd voter",ease:3,badge:"intermediate",badgeClass:"badge-amber",
+   analogy:"Imagine asking 500 different experts and letting them vote on the answer. Each 'tree' learned from a random slice of data. The majority vote wins.",
+   how:"Builds hundreds of decision trees, each trained on random subsets of data. Final prediction = average of all trees. Also gives feature importance ranking.",
+   best:"Messy, non-linear data. Works for both buildings and industrial facilities. Handles missing data and outliers well.",
+   vars:"All 4 variable groups — weather, occupancy, time effects, production data"},
+  {num:"A5",name:"XGBoost",nick:"The champion learner",ease:4,badge:"recommended",badgeClass:"badge-blue",
+   analogy:"Like a student who learns from every mistake. Each new tree fixes the errors made by the previous one. It keeps improving round by round until very accurate.",
+   how:"Gradient boosting: starts with a weak prediction, calculates the error, builds a new tree to correct that error, repeats 100–1,000 times. Uses regularization to avoid overfitting.",
+   best:"#1 best for energy tabular data. Won the ASHRAE Kaggle competition. Handles all data types, fast and accurate — best accuracy vs speed trade-off.",
+   vars:"All 4 variables — weather, occupancy/behavior, time lags, production volume"},
+  {num:"A6",name:"LightGBM",nick:"The speedy XGBoost",ease:4,badge:"advanced",badgeClass:"badge-amber",
+   analogy:"Same idea as XGBoost, but uses a smarter shortcut — it groups data into histogram bins. Much faster on large datasets with nearly the same accuracy.",
+   how:"Uses leaf-wise tree growth (more accurate) instead of level-wise (traditional). Trains 10× faster than XGBoost on large datasets.",
+   best:"When you have millions of rows (the ASHRAE dataset has 20 million rows). Same accuracy as XGBoost but much faster.",
+   vars:"All 4 variables — especially effective with time lag features and high-frequency data"},
+  {num:"A7",name:"LSTM",nick:"The memory master",ease:5,badge:"advanced",badgeClass:"badge-danger",
+   analogy:"Like a human who remembers what happened last week to predict today. It has a built-in memory cell that stores important past patterns and forgets irrelevant ones.",
+   how:"A neural network with memory gates: Forget Gate (what to ignore), Input Gate (what to remember), Output Gate (what to predict). Processes sequences: past hours → predict next hour.",
+   best:"When temporal sequence matters most — predicting next hour energy using the past 24 hours. Needs lots of data (1+ year of hourly readings).",
+   vars:"Time effects (lags t-1, t-24, t-168), weather sequences, occupancy patterns"},
+  {num:"A8",name:"Physics-based (EnergyPlus)",nick:"The building simulator",ease:3,badge:"simulation only",badgeClass:"badge-amber",
+   analogy:"Instead of learning from data, it simulates actual physics — how sunlight heats a wall, how people's body heat warms a room, how wind causes heat loss through windows.",
+   how:"Uses heat balance equations: Energy In = Energy Out + Stored. Models every wall, window, HVAC system, and person. Runs hour-by-hour for a full year.",
+   best:"When you have no real energy data. Generates synthetic training data for ML models. Validates if ML predictions are physically reasonable.",
+   vars:"All 4 variables deeply integrated — weather file, occupancy schedule, HVAC settings, production loads"},
+];
+
+const datasets=[
+  {name:"Kaggle ASHRAE GEP III",tag:"Best choice",tagClass:"badge-blue",url:"https://www.kaggle.com/c/ashrae-energy-prediction",
+   stats:["20M+ rows","1,448 buildings","16 countries","2016–2018"],
+   why:["Largest public energy prediction dataset ever created","Includes electricity, chilled water, steam and hot water meters","Contains weather data and building metadata together","Proven benchmark — 4,370 teams already tested it","Covers all 4 variable groups in one download"],
+   limit:"Large file size (2.5 GB) — needs Google Colab or a decent laptop"},
+  {name:"UCI Tetouan power consumption",tag:"Good for beginners",tagClass:"badge-green",url:"https://archive.ics.uci.edu/ml/datasets/Power+consumption+of+Tetouan+city",
+   stats:["52,416 rows","3 city zones","10-min resolution","2017"],
+   why:["Small and clean — no account needed, instant download","Includes temperature, humidity, wind speed","Good for testing weather and time variables quickly","One full year — enough for seasonal modeling"],
+   limit:"City-level only — no occupancy or production data"},
+  {name:"EIA CBECS",tag:"Buildings research",tagClass:"badge-amber",url:"https://www.eia.gov/consumption/commercial/",
+   stats:["6,700+ buildings","Survey-based","Annual frequency","2018"],
+   why:["Covers real U.S. commercial buildings — offices, hospitals, schools","Includes occupancy hours and building type","Official government data — credible for research papers"],
+   limit:"Annual frequency only — cannot do time-series or hourly modeling"},
+  {name:"EIA MECS (manufacturing)",tag:"Industrial projects",tagClass:"badge-amber",url:"https://www.eia.gov/consumption/manufacturing/",
+   stats:["All U.S. sectors","Survey-based","Annual frequency","2018"],
+   why:["Covers manufacturing energy across all sectors","Includes fuel type, production output, employee count","Best source for the production ratio variable in industrial settings"],
+   limit:"No hourly data — survey-based, not time-series friendly"},
+  {name:"NOAA climate data",tag:"Weather supplement",tagClass:"badge-blue",url:"https://www.ncdc.noaa.gov/cdo-web/",
+   stats:["Global stations","Hourly available","Any date range","Free"],
+   why:["Official weather data — temperature, humidity, wind, precipitation","Use to add weather variable to any energy dataset lacking it","Hourly resolution — perfect for time-series models"],
+   limit:"Weather data only — must be merged with an energy dataset"},
+  {name:"EnergyPlus weather files (EPW)",tag:"Simulation only",tagClass:"badge-amber",url:"https://energyplus.net/weather",
+   stats:["2,100+ cities","8,760 hrs/year","Typical year","Free"],
+   why:["Free hourly weather files for cities worldwide including Indian cities","Input files for EnergyPlus simulation software","Use to generate synthetic energy data when real meter data is unavailable"],
+   limit:"Not energy consumption data — weather input files for simulation only"},
+];
+
+const compareData=[
+  {name:"Multiple linear regression",ease:"Very easy",acc:"Low",use:"First baseline only",rec:false},
+  {name:"Random forest",ease:"Medium",acc:"Good",use:"When XGBoost is too slow",rec:false},
+  {name:"XGBoost",ease:"Medium",acc:"Best",use:"Primary model — use this",rec:true},
+  {name:"LightGBM",ease:"Medium",acc:"Best",use:"XGBoost alternative for big data",rec:false},
+  {name:"LSTM",ease:"Hard",acc:"Great for sequences",use:"Only with 2+ years hourly data",rec:false},
+  {name:"EnergyPlus",ease:"Hard",acc:"Physics-based",use:"Synthetic data generation only",rec:false},
+];
+
+const features=[
+  {f:"Air temperature",pct:34,col:"#378ADD"},
+  {f:"Hour of day",pct:22,col:"#BA7517"},
+  {f:"Occupancy count",pct:18,col:"#1D9E75"},
+  {f:"Server / production load",pct:13,col:"#a78bfa"},
+  {f:"Solar radiation",pct:8,col:"#E24B4A"},
+  {f:"Day of week",pct:5,col:"#888780"},
+];
+
+function stars(n){let s="";for(let i=1;i<=5;i++)s+=`<span style="color:${i<=n?"#BA7517":"var(--color-border-secondary)"};font-size:11px">★</span>`;return s;}
+
+const algoEl=document.getElementById("algo-list");
+let openAlgo=null;
+algos.forEach(a=>{
+  const d=document.createElement("div");
+  d.className="card";
+  d.style.cursor="pointer";
+  d.innerHTML=`
+    <div class="card-header" onclick="toggleAlgo('${a.num}')">
+      <div style="width:30px;height:30px;border-radius:var(--border-radius-md);background:var(--color-background-info);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:11px;font-weight:500;color:var(--color-text-info);flex-shrink:0">${a.num}</div>
+      <div style="flex:1">
+        <div style="font-weight:500;font-size:13.5px">${a.name}</div>
+        <div style="font-size:12px;color:var(--color-text-secondary)">${a.nick}</div>
+      </div>
+      <div>${stars(a.ease)}</div>
+      <span class="badge ${a.badgeClass}" style="margin-left:6px">${a.badge}</span>
+      <span class="chevron" id="chev-${a.num}">▼</span>
+    </div>
+    <div class="detail" id="det-${a.num}">
+      <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px"><strong>Analogy:</strong> ${a.analogy}</div></div>
+      <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px"><strong>How it works:</strong> ${a.how}</div></div>
+      <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px"><strong>Best for:</strong> ${a.best}</div></div>
+      <div class="row"><div class="dot dot-blue"></div><div style="font-size:13px"><strong>Variables used:</strong> ${a.vars}</div></div>
+    </div>`;
+  algoEl.appendChild(d);
+});
+
+function toggleAlgo(id){
+  const det=document.getElementById("det-"+id);
+  const chev=document.getElementById("chev-"+id);
+  const isOpen=det.classList.contains("open");
+  document.querySelectorAll(".detail").forEach(d=>d.classList.remove("open"));
+  document.querySelectorAll(".chevron").forEach(c=>{c.classList.remove("open");c.textContent="▼";});
+  if(!isOpen){det.classList.add("open");chev.classList.add("open");chev.textContent="▲";}
+}
+
+const ctable=document.getElementById("compare-table");
+compareData.forEach(r=>{
+  const tr=document.createElement("tr");
+  tr.style.borderBottom="0.5px solid var(--color-border-tertiary)";
+  tr.innerHTML=`
+    <td style="padding:7px 0;font-size:13px;${r.rec?"font-weight:500":""}">${r.rec?"→ ":""}${r.name}</td>
+    <td style="text-align:center;padding:7px 4px"><span class="badge ${r.ease==="Very easy"?"badge-green":r.ease==="Medium"?"badge-amber":"badge-danger"}">${r.ease}</span></td>
+    <td style="text-align:center;padding:7px 4px"><span class="badge ${r.acc==="Best"?"badge-blue":"badge-green"}">${r.acc}</span></td>
+    <td style="padding:7px 8px;font-size:12px;color:var(--color-text-secondary)">${r.use}</td>`;
+  ctable.appendChild(tr);
+});
+
+const dsEl=document.getElementById("dataset-list");
+let openDs=null;
+datasets.forEach((d,i)=>{
+  const el=document.createElement("div");
+  el.className=`card${i===0?" featured":""}`;
+  el.style.cursor="pointer";
+  el.innerHTML=`
+    <div class="card-header" onclick="toggleDs(${i})">
+      <div style="flex:1">
+        <div style="font-weight:500;font-size:13.5px">${d.name}</div>
+        <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:5px">
+          ${d.stats.map(s=>`<span class="pill">${s}</span>`).join("")}
+        </div>
+      </div>
+      <span class="badge ${d.tagClass}">${d.tag}</span>
+      <span class="chevron" id="dchev-${i}">▼</span>
+    </div>
+    <div class="detail" id="ddet-${i}">
+      <div style="font-size:12px;font-weight:500;color:var(--color-text-success);margin-bottom:6px">Why use this</div>
+      ${d.why.map(w=>`<div class="row"><div class="dot dot-green"></div><div style="font-size:13px">${w}</div></div>`).join("")}
+      <div style="font-size:12px;font-weight:500;color:var(--color-text-danger);margin-top:8px;margin-bottom:6px">Limitation</div>
+      <div class="row"><div class="dot dot-red"></div><div style="font-size:13px">${d.limit}</div></div>
+      <a href="${d.url}" class="link" style="display:inline-block;margin-top:8px;padding:5px 12px;border:0.5px solid var(--color-border-info);border-radius:var(--border-radius-md)">Open dataset →</a>
+    </div>`;
+  dsEl.appendChild(el);
+});
+
+function toggleDs(i){
+  const det=document.getElementById("ddet-"+i);
+  const chev=document.getElementById("dchev-"+i);
+  const isOpen=det.classList.contains("open");
+  document.querySelectorAll("[id^='ddet-']").forEach(d=>d.classList.remove("open"));
+  document.querySelectorAll("[id^='dchev-']").forEach(c=>{c.classList.remove("open");c.textContent="▼";});
+  if(!isOpen){det.classList.add("open");chev.classList.add("open");chev.textContent="▲";}
+}
+
+const fbars=document.getElementById("feat-bars");
+features.forEach(f=>{
+  fbars.innerHTML+=`<div class="bar-wrap"><div class="bar-label"><span>${f.f}</span><span style="font-weight:500">${f.pct}%</span></div><div class="bar-bg"><div class="bar-fill" style="width:${f.pct}%;background:${f.col}"></div></div></div>`;
+});
+
+function showTab(id,btn){
+  ["algo","best","data","download","example","summary"].forEach(t=>{
+    const el=document.getElementById("tab-"+t);
+    if(el) el.style.display=t===id?"block":"none";
+  });
+  document.querySelectorAll(".tab").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+}
+</script>

@@ -1,0 +1,12 @@
+281: label, .stSelectbox label, .stSlider label,
+636:     sqft  = st.slider("📐 Built-up Area (sq.ft)", 5000, 500000, 50000, 5000)
+637:     age   = st.slider("🏗️ Building Age (yrs)", 1, 50, 12)
+638:     tariff= st.slider("💡 Electricity Tariff (₹/kWh)", 4.0, 16.0, 8.0, 0.5)
+641:     target_sav = st.slider("🎯 AI Optimization Target (%)", 5, 50, 15, 1)
+1655:     st.markdown('<div class="sec-sub">Simulate the impact of building upgrades. Adjust the sliders below to see real-time energy and cost reductions.</div>', unsafe_allow_html=True)
+1661:             new_cop  = st.slider("Improve HVAC COP", 3.0, 6.0, float(pr['COP']), 0.1)
+1662:             new_shgc = st.slider("Lower Glass SHGC", 0.15, 0.60, float(pr['SHGC']), 0.05)
+1663:             new_ach  = st.slider("Tighten Air ACH", 0.5, 15.0, float(pr['ACH']), 0.5)
+1721:     audit_df = pd.DataFrame(audit_rows)
+1722:     st.dataframe(audit_df, use_container_width=True, hide_index=True)
+1780:             fb_rate   = st.select_slider("Dashboard Utility Rating", options=["⭐","⭐⭐","⭐⭐⭐","⭐⭐⭐⭐","⭐⭐⭐⭐⭐"], value="⭐⭐⭐⭐⭐")
