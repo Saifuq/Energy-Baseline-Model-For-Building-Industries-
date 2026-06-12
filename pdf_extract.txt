@@ -1,0 +1,759 @@
+
+
+===== PAGE 1 =====
+ 
+
+
+===== PAGE 2 =====
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 6 =====
+  
+ 
+  
+ 
+ 
+
+===== PAGE 7 =====
+  
+ 
+  
+Officers associated with the publication  
+ 
+Dr. Dalip Singh  Additional Director General  
+ 
+Ms. Ankita Singh  
+ 
+Shri Indradeep Roy Chowdhury  Deputy Director General  
+ 
+Director  
+ 
+Shri Saurabh Kumar  
+ 
+Ms. Devika  Vinod  
+ Junior Statistical Officer  
+ 
+Consultant  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 8 =====
+   
+ 
+i 
+  
+ 
+ 
+Abbreviations and Acronyms  
+ 
+ATF  
+BCM  
+BT  
+Aviation Turbine Fuel  
+Billion Cubic Metres  
+Billion Tonne  
+F.O. Furnace Oil  
+GgCO2  
+GW 
+GWh  
+SHP  Gigagrams of Carbon Dioxide  
+Giga Watt  
+Giga Watt Hour  
+Small Hydro Power  
+HSDO  High Speed Diesel Oil  
+IAEA  International Atomic Energy Agency  
+IEA 
+IOC 
+IRES  
+KToE  International Energy Agency  
+Indian Oil Corporation  
+International Recommendations on Energy Statistics  
+Kilo Tonne of oil Equivalent  
+KW 
+KWH  Kilowatt  
+Kilo Watt Hour  
+LDO  Light Diesel Oil  
+LNG  
+LPG  
+LSHS  
+Lubes  
+MJ 
+MMSCM  
+MS/MOGAS  
+MT 
+MTBE  
+M.T.O.  
+MTY  Liquefied Natural Gas  
+Liquefied Petroleum Gas  
+Low Sulphur Heavy Stock  
+Lubricant  
+Mega -joules  
+Million Metric Standard Cubic Metres  
+Motor Spirit/Motor Gasoline  
+Million Tonne  
+Methyl Tert -Butyl Ether   
+Mineral Turpentine Oil  
+Million Tonne Per Year  
+MW  Megawatt  
+
+===== PAGE 9 =====
+   
+ 
+ii 
+ O.E.C.D.  
+O.P.E.C.  Organization for Economic Cooperation & Development  
+Organization of Petroleum Exporting Countries  
+(P) Provisional  
+PJ  Peta -joules  
+PEC  
+PET-COKE  Per Capita Energy Consumption  
+Petroleum Coke  
+SBPS  
+SDG  
+SEEA  Special Boiling Point Spirit  
+Sustainable Development Goal  
+System of Environmental Economic Accounting  
+SKO  
+SNA  
+TEC  
+TFC  
+TPES  
+TMT  
+TMTPA  Superior Kerosene Oil  
+System of National Accounts  
+Total Energy Consumption  
+Total Final Consumption  
+Total Primary Energy Supply  
+Thousand Metric Tonne  
+Thousand Metric Tons Per Annum  
+VGO  Vacuum Gas Oil  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 10 =====
+   
+ 
+iii 
+ Table of Contents  
+EXECUTIVE SUMMARY  ................................ ................................ ................................ .................  X 
+INTRODUCTION ................................ ................................ ................................ ..............................  1 
+CHAPTER 1  : ENERGY RESERVES AND POTENTIAL  ................................ ...........................  6 
+1.1 Coal Reserves  ................................ ................................ ................................ ................................ .......................  7 
+1.2 Lignite Reserves  ................................ ................................ ................................ ................................ ...................  7 
+1.3 Crude Oil Reserves  ................................ ................................ ................................ ................................ ..............  8 
+1.4 Natural Gas Reserves  ................................ ................................ ................................ ................................ ..........  8 
+1.5 Renewable Energy Potential in India  ................................ ................................ ................................ ................  9 
+CHAPTER 2  : INSTALLED CAPACITY, ITS UTILIZATION AND  ................................ ...... 14 
+CREDIT FLOW TO DOMES TIC ENERGY SECTOR  ................................ ..............................  14 
+2.1 Installed Capacity of Coal Washeries  ................................ ................................ ................................ ...............  15 
+2.2 Refinery and Oil Refining Capacity in India  ................................ ................................ ................................ .. 15 
+2.3 Installed Capacity  of Electricity Generation  ................................ ................................ ................................ ... 16 
+2.3.1 Capacity by Source and Utility Distribution  ................................ ................................ ................................  16 
+2.3.2  Growth in Renewable Energy  ................................ ................................ ................................ .........................  17 
+2.3.3 Thermal Energy Growth (Utility and Non -utility)  ................................ ................................ ......................  17 
+2.4 Geographical Distribution of Installed Electricity Capacity  ................................ ................................ .........  17 
+2.5 Grid -Interactive Renewable Power Capacity  ................................ ................................ ................................ .. 18 
+2.7 Credit flow to Domestic Energy Sector  ................................ ................................ ................................ ............  20 
+CHAPTER 3  :PRODUCTION OF ENERGY  RESOURCES ................................ ......................  30 
+3.1 Coal Production  ................................ ................................ ................................ ................................ ..................  31 
+3.2 Lignite Production  ................................ ................................ ................................ ................................ ..............  31 
+3.3 Crude Oil Production  ................................ ................................ ................................ ................................ .........  31 
+3.4 Natural Gas Production  ................................ ................................ ................................ ................................ ..... 32 
+3.5 Electricity Generation  ................................ ................................ ................................ ................................ ........  32 
+3.6 Petroleum Products Production  ................................ ................................ ................................ ........................  33 
+3.7 Compound annual growth rate of production of primary energy resources  ................................ ...............  34 
+
+===== PAGE 11 =====
+   
+ 
+iv 
+ 3.8 Energy Production in Petajoules  ................................ ................................ ................................ .......................  34 
+3.9 Dependency on Coal for Primary Energy Generation  ................................ ................................ ....................  35 
+CHAPTER 4  : FOREIGN TRADE AND PR ICES OF ENERGY RESOU RCES  .....................  42 
+4.1 Coal Imports  ................................ ................................ ................................ ................................ ........................  43 
+4.2 Crude Oil Imports  ................................ ................................ ................................ ................................ ..............  43 
+4.3 Petroleum Product Exports  ................................ ................................ ................................ ................................  43 
+4.4 Natural Gas Imports  ................................ ................................ ................................ ................................ ...........  43 
+4.5 Electricity Exports and Imports  ................................ ................................ ................................ .........................  43 
+4.6 Trend in Import of Coal, Crude Oil, Petroleum Products, Natural Gas and electricity ..............................  44 
+4.7 Trend in Whole sale Price Indices (base 2011 -12) of Energy commodities  ................................ ..................  45 
+CHAPTER 5  : AVAILABILITY OF ENER GY RESOURCES ................................ ....................  48 
+5.1 Availability of energy resources  ................................ ................................ ................................ .......................  49 
+5.2 Coal Availability  ................................ ................................ ................................ ................................ .................  49 
+5.3 Crude Oil Availability  ................................ ................................ ................................ ................................ .......  50 
+5.4 Petroleum Products Availability  ................................ ................................ ................................ .......................  51 
+5.5 Natural Gas Availability  ................................ ................................ ................................ ................................ .... 51 
+5.6 Electricity Availability  ................................ ................................ ................................ ................................ .......  52 
+CHAPTER 6  :CONSUMPTION OF ENERG Y RESOURCES  ................................ ..................  55 
+6.1 Source wise Consumption of Primary Energy Resources  ................................ ................................ ..............  56 
+6.2 Total consumption of Primary Energy in India  ................................ ................................ ..............................  57 
+6.3 Sector -wise Consumption of Coal  ................................ ................................ ................................ ....................  57 
+6.4 Sector -wise Consumption of Lignite  ................................ ................................ ................................ ................  58 
+6.5 Consumption of Petroleum products  ................................ ................................ ................................ ...............  58 
+6.5.1 Consumption of petroleum products - by type  ................................ ................................ .............................  59 
+6.6  Consumption of Natural Gas  ................................ ................................ ................................ ...........................  60 
+6.7 Consumption of electricity  ................................ ................................ ................................ ................................  61 
+CHAPTER 7  : ENERGY BALANCE AND S ANKEY DIAGRAM  ................................ ...........  76 
+7.1 Primary Energy Supply (PES)  ................................ ................................ ................................ ...........................  78 
+
+===== PAGE 12 =====
+   
+ 
+v 
+ 7.2 Total Final Consumption (TF C) ................................ ................................ ................................ ........................  78 
+7.3 Industry -wise Consumption of Energy  ................................ ................................ ................................ ............  79 
+7.4 Energy Balance  ................................ ................................ ................................ ................................ ....................  79 
+CHAPTER 8  : SUSTAINABILITY AND E NERGY  ................................ ................................ .... 92 
+8.4.1 Energy Intensity and Per Capita Energy Consumption ................................ ................................ ...............  95 
+8.4.2 Emissions from the Energy Secto r ................................ ................................ ................................ .................  96 
+8.5 Overview of Sustainability Energy Indicators: Economic Dimension  ................................ .........................  96 
+8.5.1 Theme - Use and Production Pattern  ................................ ................................ ................................ ..............  96 
+(i) Sub Theme -Overall Use  ................................ ................................ ................................ ................................ ... 96 
+Energy Indicator - Energy Use per Capita  ................................ ................................ ................................ ...............  96 
+(ii) Sub theme -Overall Productivity  ................................ ................................ ................................ ................  98 
+Energy Indicator -Energy Use per Unit of GDP  ................................ ................................ ................................ ..... 98 
+(iii) Sub theme - Supply Efficiency  ................................ ................................ ................................ ..........................  99 
+Energy Indicator -Efficiency of Energy Conversion and Distri bution  ................................ ..............................  99 
+(iv) Sub theme - Production  ................................ ................................ ................................ ................................ ..... 100 
+Energy Indicator - Reserve -to-Production Ratio  ................................ ................................ ................................ .. 100 
+(v) Sub theme - Production  ................................ ................................ ................................ ................................ ...... 101 
+Energy indicator - Resources -to-Production Ratio  ................................ ................................ ..............................  101 
+(vi) Sub theme - End use  ................................ ................................ ................................ ................................ ..........  101 
+Energy Indicator - Sectoral Energy Intensities  ................................ ................................ ................................ ..... 101 
+(vii) Sub theme - End use  ................................ ................................ ................................ ................................ .........  102 
+Energy Indicator - Sectoral Electricity  Intensities  ................................ ................................ ...............................  102 
+(viii) Sub theme - Diversification (Fuel Mix)  ................................ ................................ ................................ .......  103 
+Energy Indicator - Fuel share in Total Primary Ene rgy Supply (TPES)  ................................ ..........................  103 
+(ix) Sub theme - Diversification (Fuel Mix)  ................................ ................................ ................................ ..........  104 
+Energy Indicator - Fuel share in Total Final Energy Consumption (TFEC)  ................................ ....................  104 
+(x) Sub theme - Diversification (Fuel Mix)  ................................ ................................ ................................ ...........  105 
+Energy Indicator -Fuel share in electricity  ................................ ................................ ................................ ............  105 
+(i) Sub theme - Imports  ................................ ................................ ................................ ................................ .............  106 
+Energy Indicator - Net energy import dependency  ................................ ................................ .............................  106 
+CHAPTER 9  : ENERGY ACCOUNTS  ................................ ................................ ........................  117 
+9.1 SEEA -Energy  ................................ ................................ ................................ ................................ .....................  117 
+9.1.1 Asset Accounts for Energy  ................................ ................................ ................................ .............................  118 
+9.2.2 Physical Supply and Use Tables (PSUT)  ................................ ................................ ................................ .... 121 
+9.2.3 Monetary Supply and Use Tables (MSUT)  ................................ ................................ ................................  122 
+9.3 Physical Asset Accounts for Energy for India  ................................ ................................ ...............................  123 
+9.4 Physical Supply and Use Table for Energy  ................................ ................................ ................................ ... 123 
+CHAPTER 10  : WORLD ENERGY STATIST ICS  ................................ ................................ ..... 130 
+10.1 World Energy Scenario ................................ ................................ ................................ ................................ ... 130 
+10.1.1 Glob al Primary Energy Supply - ................................ ................................ ................................ .................  130 
+10.1.2 Global Energy Consumption: ................................ ................................ ................................ ......................  133 
+b) Energy Consumption from Major sources:  ................................ ................................ ................................ ..... 134 
+
+===== PAGE 13 =====
+   
+ 
+vi 
+ 10.2 India v/s Selected countries: A Comparative St udy of Energy Trends  ................................ .....................  136 
+10.2.1 Total Energy Supply:  ................................ ................................ ................................ ................................ .... 136 
+10.2.2 Total Energy Consumption:  ................................ ................................ ................................ .........................  136 
+10.3.1 Sustainable Energy Indicator: Per Capita Electricity C onsumption:  ................................ .....................  137 
+ANNEXURE -I : DEFINITIONS OF ENERG Y PRODUCTS AND ASSOC IATED 
+CONCEPTS  ................................ ................................ ................................ ................................ ..... 139 
+ANNEXURE -II : MEASUREMENT UNITS IN  ENERGY STATISTICS  .............................  148 
+ANNEXURE III  : METADATA: PUBLICATIO N ................................ ................................ .... 151 
+ANNEXURE - IV: ENERGY BALANCE TABLE  OF INDIA FROM 2015 -16 TO 2022 -23 . 155 
+REFERENCES  ................................ ................................ ................................ ................................ . 163 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 14 =====
+   
+ 
+vii 
+ List of Tables  
+Table no.  Table  Page no.  
+Table 1.1  State wise Estimated Reserves Coal  11 
+Table 1. 2 State wise Estimated Reserves of Lignite  11 
+Table 1. 3 State wise Estimated Reserves of Crude Oil and Natural 
+Gas 12 
+Table 1. 4 Source wise and State wise Estimated Potential of 
+Renewable Power in India  13 
+Table 2.1  Installed Capacity of Coal Washeries  23 
+Table 2.2  Installed Capacity and Utilization of Refineries of Crude 
+Oil 24 
+Table 2.3 (A ) Year wise Installed Capacity of Electricity Generation in 
+Utilities and Non -utilities  25 
+Table 2.3 (B ) Year wise Installed Capacity of Electricity Generation in 
+Utilities and Non -utilities  26 
+Table 2.4  Region wise and State wise Installed Capacity of 
+Electricity Generation (Utilities)  27 
+Table 2.5  State wise cumulative Installed Capacity of Grid 
+Interactive Renewab le Power  28 
+Table 2.6  Installation of Off -grid / Decentralized Renewable 
+Energy Systems/ Devices as on 31.03.2024  29 
+Table 3.1  Year wise Production of Primary Energy Resources in 
+Physical Units  36 
+Table 3.2  Year wise Production of Primary Energy Resources in 
+Energy Units  36 
+Table 3.3  Year wise Production of Coal - Type wise and Sector wise  37 
+Table 3.3 A  Grade wise Production of Coking Coal by Sector during 
+2022 -23 & 2023 -24 37 
+Table 3.3 B  Grade wise Production of Non -Coking Coal by Sector 
+duri ng 2022 -23 & 2023 -24 38 
+Table 3.4  Year wise Domestic Production of Petroleum Products  39 
+Table 3.5  Year wise Gross and Net Production of Natural Gas  40 
+Table 3.6 (A)  Year wise Gross Generation of Electricity from Utilities  40 
+Table 3.6 (B)  Year wise Gross Generation of Electricity from Non -
+Utilities  41 
+Table 4.1  Year wise Foreign Trade in Coal, Crude Oil, Petroleum 
+Products (total), Natural Gas and Electricity  46 
+Table 4.2  Year wise Wholesale Price Indices of Energy 
+Commodities  47 
+
+===== PAGE 15 =====
+   
+ 
+viii 
+ Table 5.1  Year wise Availability of Energy Resources  53 
+Table 5.2  Year wise Availability of Coal and Lignite  53 
+Table 5.3  Year wise Availability of Crude Oil, Petroleum Products 
+and Natural Gas  54 
+Table 5.4  Year wise Availability of Electricity  54 
+Table 6.1  Year wise  Consumption of Energy Resources in Physical 
+Units  62 
+Table 6.2  Year wise Consumption of Primary Energy Resources in 
+Energy Units  62 
+Table 6.3  Year wise Consumption of Coal – Industry wise  63 
+Table 6.4  Year wise Consumption of Lignite – Industry wise  64 
+Table 6.5  Year wise Consumption of Petroleum Products – 
+Category wise  65 
+Table 6.6 (A)  Year wise Consumption of Selected Petroleum Products - 
+Sector wise (end use)  - HSDO  66 
+Table 6.6 (B)  Year wise Consumption of Selected Petroleum Products - 
+Sector wise (end use)  – LDO  67 
+Table 6.6 (C)  Year wise Consumption of Selected Petroleum Products - 
+Sector wise (end use)  – Furnace Oil  68 
+Table 6.6 (D)  Year wise Consumption of Selected Petroleum Products - 
+Sector wise (end use)  – Low Sulphur Heavy Stock  69 
+Table 6.6 (E)  Year wise Consumption of Selected Petroleum Products - 
+Sector wise (end use)  - LPG  70 
+Table 6.6 (F)  Year wise Consumption of Selected Petroleum Products - 
+Sector wise (end use)  - Naptha  71 
+Table 6.6 (G)  Year wise Consumption of Selected Petroleum Products - 
+Sector wise (end use)  – SKO (Kerosene)  72 
+Table 6.7  Year wise Consumption of Natural Gas – Sector wise  73 
+Table 6.8  Year wise Consumption of Electricity – Sector wise  74 
+Table 6.9  Electricity Generated (from Utilities), Distributed,  Sold 
+and Transmission & Distribution Losses  75 
+Table 7.1  Energy Commodity Balance for 2022 -23 (Final)  80 
+Table 7.2  Energy Balance of India  (in KToE)  for 2022 -23(Final)  81 
+Table 7.3  Energy Balance of India (in Peta Joule) for 2022 -23 (Final)  82 
+Table 7.4 Energy Balance of Petroleum Products for 2022 -23 (Final)  83 
+Table 7. 5 Energy Commodity Balance for 2023 -24 (P)  84 
+Table 7. 6 Energy Balance of India  (in KToE)  for 2023 -24 (P)  85 
+Table 7.7  Energy Balance of India (in Peta Joule) for 2023 -24 (P)  86 
+Table 7. 8 Energy Balance of Petroleum Products for 2023 -24 (P)  87 
+
+===== PAGE 16 =====
+   
+ 
+ix 
+ Table 8.1  Per-Capita Primary Energy Consumption and Energy 
+Intensity  107 
+Table 8.2  India's Total Emissions related to Energy Sector  108 
+Table 8.3  Energy Indicators (Economic Dimension) for 
+Sustainability from FY: 201 4-15 to FY: 2023 -24(P) 109 
+Table 8.4  Energy Use per Capita in India  110 
+Table 8.5  Energy Consumption per 000'rupees of GDP  110 
+Table 8.6  Efficiency of energy conversion and distribution  111 
+Table 8.7  Reserves to Production Ratio of Coal, Lignite and All  111 
+Table 8.8  Resources to Production Ratio of all Energy Commodities  112 
+Table 8.9  Energy Intensity (in MJ/'000 Rs. of GVA) of major sectors  112 
+Table 8.10  Electricity Intensity (in Kwh/'000 Rs. of GVA) of major 
+sectors  113 
+Table 8.11  Fuel Share of major Energy Commodities in Total 
+Primary Energy Supply (TPES)  113 
+Table 8.12  Fuel share of different energy commodities in Total Final 
+Energy Consumption (TFEC)  114 
+Table 8.13  Share of different fuel in Total Generation of Electricity 
+(in percentage)  114 
+Table 8.14  Net Energy Import Dependency of energy commodities  115 
+Table 9.1  Physical Asset Accounts for Energy: 202 4-25(P) 125 
+Table 9.2 (A)  Physical Supply Table for Energy for the year 202 3-24 126 
+Table 9.2 (B)  Physical Use Table for Energy for the year 202 3-24 127 
+Table 9.3 (A)  Physical Supply Table for Energy for the year 202 4-25 (P) 128 
+Table 9.3 (B)  Physical Use Table for Energy for the year 202 4-25 (P) 129 
+Table 10.1  TPES from Renewable and Non -Renewable resources: 
+world  131 
+Table 10.2  TPES from Major energy resources: world (in Exajoule)  132 
+Table 10.3  World Energy Consumption from Non -Renewable and 
+Renewable resources  133 
+Table 10. 4 Global Energy Consumption by energy source (in 
+Exajoule)  134 
+Table 10. 5 Difference between Total Supply and Consumption of 
+energy during 2023 among the selected countries  137 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 17 =====
+   
+ 
+x 
+ Executive Summary  
+ 
+ Energy is an essential ingredient for all human activities, be it the power sector, the 
+Industry, transportation or the household, the requirement of energy is indispensable and 
+ubiquitous. In the Financial Year 202 4-25, India has experienced a steady and healthy 
+growth in both, energy supply and consumption. The Indian economy, continued to have 
+higher quench for energy to support the rapidly expanding urbanization  and 
+industrialization and the vision of becoming the Viksit Bharat by 2047 .   The key highlights 
+of the overall performance of the energy sector of India during FY 2024 -25 are as f ollows:  
+1. As on March 31, 202 5, the reserves of Coal stood at 400.72 billion tonnes of which 
+Odisha has the highest share of 25. 20% followed by Jharkhand (23. 27%), Chhattisgarh 
+(21.2 8%), West Bengal (8. 58%) and M.P(8. 38%). The Proved Reserves (i.e. economically 
+mineable reserve) consists of around 55% of the total Coal reserve in India during FY 202 4-
+25. The estimated Crude Oil reserves was 67 2.07 million tonnes of which Western Offshore 
+accounted for around 3 1%, followed by Assam (21. 53%), Rajasthan  (20.30 %) and Gujrat 
+(18.03%). The Natural Gas reserves were recorded at 1,0 73.01 billion cubic meters (BCM) 
+during FY 202 4-25; which is primarily located at the Western Offshore (3 2.50%) followed 
+by Eastern Offshore (2 5.23%) and Assam (15. 22%). 
+2. The estima ted potential for generation of energy from renewable resources have 
+reached at 47,04,043 MW as on March 31, 202 5. the Solar Energy  has witnessed a staggering 
+growth from 748,990 Megawatt during FY: 2023 -24 to 33,43,378  Megawatt during FY: 2024 -
+25 and is having the highest share (around 71%) followed by Wind Power (11,63,856  
+Megawatt) and Large Hydro (1,33,410).  More than 70% of the total potential for generation 
+of renewable energy is concentrated in the following six (6) States viz. Rajasthan (23.70%), 
+Maharashtra (14.26%), Gujarat (9.10%), Andhra Pradesh (9.1%), Karnataka (8.59%) and 
+Madhya Pradesh ( 8.09%).  
+3. The capacity of Coal washeries in India has displayed a staggered growth over the 
+years from 131. 24 MTY as on March 31, 201 6 to 262.39 MTY as on March 31, 202 5; in contrast 
+
+===== PAGE 18 =====
+   
+ 
+xi 
+ there is a steep rise in the volume of production of Coal over the years (an increase of 408.29 
+MTs from FY 201 5-16 to FY: 202 4-25). 
+4. Coal remained the backbone of India’s energy supply, accounting for nearly 79% of 
+the total energy supplied domestically in FY 202 4-25. Coal production grew by 4.98%, 
+reaching at 1047.52  million tonnes, up from 997.83  million tonnes in the previous year. The 
+Non -Coking Coal is having the dominating share of the total production of Coal, at around 
+93.65% during FY: 202 4-25. 
+5. The gross generation of electricity from the Renewable resources (both Utility and 
+Non -Utility together) has also emerged significantly over the years. From an amount of 
+189,314  GWH of electricity which was generated during FY 201 5-16, has increased to 
+416,823  GWH during FY 202 4-25, which is a CAGR of 9.17% over a period of 10 years.  
+6. To meet the domestic demand, India relies heavily on Import of Coal, Crude Oil and 
+Natural Gas. During FY  2024-25 the Net -Import of Coal decreased  by 8.09% and reached at 
+241.71  million tonnes, while the Net -Import of Natural Gas surged by 12.34 %, amounting 
+to 35.72 BCM (Billion Cubic Meter) during FY 202 4-25 over last year. The import of Crude 
+Oil also grew from 234.26 Million Tonnes to 243.22  Million during FY 202 4-25, over last 
+year.  
+7. India’s electricity availability showed a notable increase. The losses due to 
+Transmission and Distribution  stood at 17. 52% during FY 202 4-25 and the net electricity 
+available for supply grew by 5.26%, over last FY reaching at 1,725,254  GWh during FY 202 4-
+25. 
+8. India’s Total Primary Energy Supply (TPES) has continued its steady growth with 
+an increase of  almost 3%  during FY 202 4-25, amou nting to 932,816  Ktoe over the previous 
+year. The major source of energy comes from Coal  (including lignite)  (59.21%) which is 
+followed by Crude Oil (29. 79%) and Natural Gas ( 7.12%). 
+9. Energy supplied from the Renewable energy resources have experienced a healthy 
+and consistent growth over the years; from an amount of 1 6,281 Ktoe during FY: 2015 -16 to 
+35,847 Ktoe during FY: 202 4-25 i.e. it has registered a CAGR of 9.17% over 10 years. The 
+energy generated from Solar, Wind and Others (excluding Large Hydro)  has recorded a growth 
+
+===== PAGE 19 =====
+   
+ 
+xii 
+ from a 5,833 Ktot during 201 5-16 to 23,032  Ktoe during 202 4-25 i.e. close to CAGR of 16. 5% 
+over the past 10 years.  The same is testament to the commitment of India to attain the net -
+zero emission by 2070.  
+10. The Total Final Consumption (TFC) of energy, into different end -use sectors, has also 
+experienced a consistent  rise over the years , depicting a strong demand of energy for 
+fueling the growing economy . TFC of energy surged by around  30% since 201 5-16, reaching 
+at 608,57 8 Ktoe in FY 202 4-25. In the year 202 4-25, reflecting India’s rapid urbanization  the 
+Residential sector witnessed  the highest growth at 8.04 %; followed by commercial/public 
+service sectors (5.06%), transport (4.36 %) and Industry  sectors ( 2.67 %) as compared to  
+previous year, all of which are the driving forces of an economy and testament to the 
+steadfast progress of Indian economy.  
+11. The sector Agriculture/Forestry, has also witnessed a sound increase of energy 
+consumption over years. From an amount of 18,855  Ktoe of energy during FY 201 5-16 it 
+rose to 27,06 8 Ktoe of energy during FY 202 4-25, which is a CAGR of 4.10% over  past 10 
+years.  
+12. The per-capita -energy -consumption  (after excluding components like Industry Own 
+Consumption, Losses etc.)  in India has also experienced a growth over the years. From an 
+amount of 15,296 Mega Joule/person during FY 20 15-16, the same has risen by over 19% 
+during the last 10 years and reached at 18,096  Mega Joule/person during FY 202 4-25. The 
+per-capita -electricity -consumption  has gone up from 78 0 KWh/person during FY 201 5-16 to 
+1,153 KWh/person during FY: 202 4-25, i.e. an increase of around 48% over a span of 10 
+years.  
+13. The overall Energy intensity of India has witnessed a consistent  improvemen t over 
+the past years.  A shift  in the base year of GDP from 2011 -12 to 2022 -23 has its’ direct impact 
+upon all  the figure of Energy Intensities from FY: 2022 -23 onwards. Whereas the total 
+energy intensity has become into 0.1346 Mega Joules /1 INR of GDP  during FY: 2022 -23, 
+which further marginally improved to 0.1329  Mega Joules/1 INR of GDP during FY:2024 -
+25(P) . Further  the Energy Intensity for Industry (164.63  Mega Joule/’000 Rs. of GDP ), 
+
+===== PAGE 20 =====
+   
+ 
+xiii 
+ Agriculture (22.28  Mega Joule/’000 Rs. of GDP ) and Transport (594 .54 Mega Joule/’000 Rs. 
+of GDP ) have also been observed to have reduced significantly during 202 4-25(P).  
+14. India’s dependency on the energy Imports has remained significant. During FY 20 24-
+25, the Import -dependency of Crude Oil was around  89.44 %, whereas  the same  was 49.73 
+% for Natural Gas and 23.50 % for Coal.  
+15. In line with the commitment to transform into Net -zero emission by 2070, the Credit Flow 
+to the energy in India has also experienced a steadfast growth over the years. A credit flow of               
+₹ 1,688  Cr during 20 21 into the Renewable Energy sector has increased to ₹10,325 crore 
+during 2025 , which is a growth of over 6 times in a span of 5 years. The same testament to 
+the India’s efforts to become self -reliant in the  field of energy.  
+16. At International level, the world is still heavily relied on  Non -renewable energy -resources  
+(around 90% of the total energy -consumed)  like Crude Oil and Coal. During the span between 2015  
+to 2020  a surge of 17.3% growth has been observed in the supply of energy from Renewable 
+resources in the world. The growth story of renewable energy -resources continues to remain 
+hovering around a figure of 10% -12% on Y-o-Y basis, reflecting a clear transformation of energy -
+consump tion pattern among the countries of the world at large.  
+17. A quick comparison of energy -consumption pattern among some of the selected countries 
+of the world (refer Chapter -10) suggests that, USA and China have  dominated the energy -supply 
+consumption as-well -as the per -capita electricity consumption  and other parameters  at 
+International level; whereas India, with its’ growing economy, still have roads to travel , as per data 
+published by IEA.   
+ 
+
+===== PAGE 21 =====
+   
+ 
+i 
+  
+
+
+===== PAGE 22 =====
+ 
+1 | P a g e  
+ Introduction  
+ 
+1. India’s Energy Scenario  
+ 
+India  is a major force in the global energy economy. There has been a rapid increase in energy 
+consumption due to a gr owing population and rapid economic growth. The growing 
+demand is met through various energy sources, such as coal, oil and solid biomass. Coal1 has 
+underpinned the expansion of electricity generation and industry, and remains the largest 
+single fuel in the energy mix. Oil consumption2 and imports have grown rapidly on account 
+of rising vehicle ownership and road transport use. Natural gas and mod ern renewable 
+sources of energy have started to gain ground , and the rise of solar  photovoltaic (PV) , in 
+particular, has  been spectacular. India is currently the world’s 3rd largest consumer of oil, 3rd  
+largest LPG consumer, 4th largest LNG importer, 4th largest refiner and 4th largest automobile 
+market3. As far as the governance of the energy sector by the central government is 
+concerned, the following figure provides a snapshot.  
+India’s announcement4 that it aims to reach net -
+zero emissions by 2070 and to meet fifty percent of 
+its electricity requirements from renewable energy 
+sources by 2030 is a significant moment for the 
+global fight against climate change. India is 
+pioneering a new model of economic development 
+that could avoid the carbon -intensi ve approaches.  
+ 
+India is constantly endeavoring towards 
+sustainable and clean energy. In line with the 
+Prime Minister’s announcement at COP -265, M/o 
+New and Renewable Energy is working towards 
+achieving 500 GW of Non -Fossil based electricity 
+generation capacity by 2030. India stands 4th 
+globally in Renewable Energy Installed capacity, 
+4th in Wind Power capacity and 3rd in Solar Power 
+capacity (as per the International Renewable 
+Energy Agency — Renewable Capacity Statistics 
+2025). 
+                                                           
+1 https://www.iea.org/countries/india   
+2 https://iea.blob.core.windows.net/assets/1de6d91e -e23f-4e02 -b1fb -51fdd6283b22/India_Energy_Outlook_2021.pdf   
+3 https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1992767   
+4 https://www.iea.org/commentaries/india -s-clean -energy -transition -is-rapidly -underway -benefiting -the-entire -world   
+5 https://pib.gov.in/PressReleasePage.aspx?PRID=1992732   
+
+
+===== PAGE 23 =====
+ 
+Introduction  
+2 | P a g e  
+  
+In addition, some of other program/schemes that are also being implemented are:  
+ 
+i. National Green Hydrogen Mission  
+ii. Green Energy Corridor -Inter State Transmission System for 13 GW RE Projects in 
+Ladakh  
+iii. Production Linked Incentive (PLI) Scheme for High Efficiency Solar PV Modules  
+iv. Offshore Wind Energy, Bioenergy  
+v. Solar Parks, Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan (PM 
+KUSUM), Rooftop Solar etc.  
+ 
+Energy is the most important sector for ada ptation as it is responsible for 75 -80% of the 
+emissions. India has emerged as a world leader in energy transition. Solar energy contributes 
+to more than 45% in the total renewable energy segment, making it the largest contributor 
+amongst all RE sources (e xcluding large hydro projects). Installed capacity of solar energy in 
+India has increased by more than 30 times from 2.82 GW in March 2014 to 9 4.17 GW in 
+December 2024.  
+ 
+ 
+2. Energy Statistics and International Recommendations  
+ 
+The United Nations Statistical Commission, at its forty second session (22 –25 February 2011), 
+adopted  the International Recommendations on Energy Statistics  (IRES ) as a statistical 
+standard and encouraged its implementation in all countries. IRES provide a comprehensive 
+methodological framework for the collection, compilation and dissemination of energy 
+statistics in all countries irrespective of the level of develo pment of their statistical system. In 
+particular, IRES provides of a set of internationally agreed recommendations covering all 
+aspects of the statistical production process, from the institutional and legal framework, basic 
+concepts, definitions and class ifications to data sources, data compilation strategies, energy 
+balances, data quality issues and statistical dissemination.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 24 =====
+  
+  Introduction  
+3 | P a g e  
+ As per the IRES 2011, recommended unit of dissemination for main categories of energy 
+products are:  
+     
+ Source: IRES, 2011, United Nations  
+ 
+3. Energy Resources and Products  
+ 
+Energy resources refer to “all non -renewable energy resources of both inorganic and organic 
+origins discovered in the earth’s crust in solid, liquid and gaseous form.” Energy reserves are 
+part of the resources that, based on technical, economic and other relevant (e.g., 
+environmental) considerations, could be recovered and for which extraction is justified to 
+some extent.  
+ 
+The term products are understood in the same way as in economic statistics where  it refers 
+to all goods and services that are the result of production . 
+ 
+As a general guideline, energy products refer to products exclusively or mainly used as a 
+source of energy. They include forms of energy suitable for direct use (e.g., electricity and 
+heat) and energy products that release energy while undergoing some chem ical or other 
+process (including combustion). By convention, energy products also include peat, biomass 
+and waste if and only if they are used for energy purposes.  
+ 
+Since a number of energy products are transformed into other kinds of energy products prior  
+to their consumption, a distinction is made between primary and secondary energy products. 
+This distinction is necessary for various analytical purposes, including for avoiding the 
+double -counting of energy production in cross -fuel tabulations, such as en ergy balances. 
+Energy products can be obtained from both renewable (e.g., solar, biomass, etc.) and non -
+renewable sources (e.g., coal, crude oil, etc.).  
+ 
+ 
+ 
+
+
+===== PAGE 25 =====
+  
+  Introduction  
+4 | P a g e  
+ The description of the boundary of the universe of energy products in energy statistics is not 
+alway s straightforward. For example, different forms of corn/corncobs are: (1) combusted 
+directly to produce heat; (2) used in the production of ethanol as a biofuel, (3) consumed as 
+food, or (4) thrown away as waste.  
+ 
+4. Energy Flows  
+ 
+As per the IRES 2011 , the broad sectoral diagram representation of Energy Flow in an 
+economy is presented below.  
+ 
+ Source: IRES, 2011, United Nations  
+ 
+ 
+The term “energy flow” refers to the production, import, export, bunkering, stock changes, 
+transformation, energy use by energy industries, losses during the transformation, and final 
+consumption of energy products within the territory of reference for whic h these statistics 
+are compiled. This territory generally corresponds to the national territory; however, it can 
+also refer to an administrative region at the sub -national level or even to a group of countries. 
+The term “rest of the world” is used here to denote all areas/territories outside the reference 
+territory.  
+The publication, Energy Statistics India 202 6, is compliant with the IRES 2011 and follows the 
+practices prescribed therein.  
+ 
+ 
+ 
+ 

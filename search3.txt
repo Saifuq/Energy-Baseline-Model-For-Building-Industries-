@@ -1,0 +1,16 @@
+33:     initial_sidebar_state="expanded",
+62: [data-testid="stSidebar"] {
+66: [data-testid="stSidebar"] > div { background-color: #F8FAFC !important; }
+186: /* 🍔 SIDEBAR MENU LABEL (Restored Elite) */
+187: [data-testid="stSidebarNav"]::before {
+310: [data-testid="stSidebar"] {
+314: [data-testid="stSidebar"] * {
+318: /* Ensure sidebar headers and labels are deep black */
+319: [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3, [data-testid="stSidebar"] label {
+322: [data-testid="stSidebar"] .stMarkdown p { color: #1E293B !important; font-weight:600; }
+626: #  SIDEBAR  — Configuration Matrix
+628: with st.sidebar:
+665:     <div class="menu-btn">⬅️ OPEN SIDEBAR</div>
+747:             Toggle the <b>Sidebar Menu (Left)</b> to simulate different cities, building types, and area parameters.
+751:           ⬅️ OPEN SIDEBAR
+1655:     with st.expander("🛠️ Open Optimizer & Simulator", expanded=True):
