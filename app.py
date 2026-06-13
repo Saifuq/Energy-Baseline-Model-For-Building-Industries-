@@ -72,57 +72,75 @@ html, body, * {
 }
 
 /* ═══ STREAMLIT CHROME (Robust Cloud Fix) ═══ */
-/* Ensure the top header area is completely transparent so our UI shows through, but the sidebar toggle remains fully interactive */
+
+/* Make Streamlit headers transparent so our background shows */
 [data-testid="stHeader"] {
-    background-color: transparent !important;
+    background: transparent !important;
 }
 header {
     background: transparent !important;
 }
-/* Hide only the unwanted elements (GitHub icon, deploy button, hamburger menu) */
-[data-testid="stToolbar"] {
-    visibility: hidden !important;
-    display: none !important;
-}
-[data-testid="stDecoration"] {
-    visibility: hidden !important;
-    display: none !important;
-}
-footer {
-    visibility: hidden !important;
-}
 
-/* 🚀 Style the Streamlit Sidebar Toggle Arrow itself to match our Elite theme */
-[data-testid="collapsedControl"] {
+/* Hide only the specific top-right tools we do not want */
+[data-testid="stToolbar"] { display: none !important; visibility: hidden !important; }
+[data-testid="stDecoration"] { display: none !important; visibility: hidden !important; }
+.stDeployButton { display: none !important; visibility: hidden !important; }
+footer { display: none !important; visibility: hidden !important; }
+
+/* 🚀 FIX: The Streamlit Sidebar Toggle Arrow 
+   Streamlit recently changed their data-testid. 
+   We use a wildcard to catch both "collapsedControl" and "stSidebarCollapsedControl"
+*/
+[data-testid*="collapsedControl"],
+[data-testid*="CollapsedControl"],
+button[kind="header"] {
     display: flex !important;
     visibility: visible !important;
-    background: linear-gradient(135deg, #0f172a, #1e3a5f) !important;
+    background: linear-gradient(135deg, #f97316, #f59e0b) !important; /* Make it BRIGHT ORANGE so it cannot be missed */
     color: #FFFFFF !important;
-    border-radius: 0 12px 12px 0 !important;
-    border: 2px solid #f97316 !important;
-    box-shadow: 4px 0 15px rgba(249,115,22,0.4) !important;
-    width: 44px !important;
+    border-radius: 8px !important;
+    border: 2px solid #FFFFFF !important;
+    box-shadow: 0 4px 15px rgba(249,115,22,0.6) !important;
+    width: 50px !important;
     height: 50px !important;
-    top: 30px !important;
-    left: 0px !important;
-    cursor: pointer !important;
+    top: 15px !important;
+    left: 15px !important;
+    position: fixed !important;
     z-index: 999999 !important;
     align-items: center !important;
     justify-content: center !important;
+    opacity: 1 !important;
+    transition: all 0.3s ease !important;
 }
-[data-testid="collapsedControl"]:hover {
-    background: linear-gradient(135deg, #f97316, #f59e0b) !important;
-    box-shadow: 4px 0 20px rgba(249,115,22,0.7) !important;
+
+[data-testid*="collapsedControl"]:hover,
+[data-testid*="CollapsedControl"]:hover,
+button[kind="header"]:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 6px 20px rgba(249,115,22,0.9) !important;
 }
-[data-testid="collapsedControl"] svg {
+
+/* Force the arrow icon itself to be white and large */
+[data-testid*="collapsedControl"] svg,
+[data-testid*="CollapsedControl"] svg,
+button[kind="header"] svg {
     color: #FFFFFF !important;
     fill: #FFFFFF !important;
-    width: 20px !important;
-    height: 20px !important;
+    width: 28px !important;
+    height: 28px !important;
+}
+
+/* Ensure the sidebar itself has a high z-index and proper width when open */
+[data-testid="stSidebar"] {
+    min-width: 320px !important;
+    max-width: 400px !important;
+    z-index: 9999999 !important;
+    background-color: #F8FAFC !important;
+    border-right: 2px solid #0A3D62 !important;
 }
 
 .block-container {
-  padding-top: 1.5rem !important;
+  padding-top: 3.5rem !important; /* Extra padding so the button doesn't overlap title */
   padding-bottom: 2rem !important;
   max-width: 1300px !important;
 }
