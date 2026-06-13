@@ -71,14 +71,28 @@ html, body, * {
   color: #111111;
 }
 
-/* ═══ STREAMLIT CHROME ═══ */
-#MainMenu { visibility: hidden; }
-footer { visibility: hidden; }
-/* Keep header visible so sidebar toggle arrow shows */
-header { visibility: visible !important; }
-header [data-testid="stToolbar"] { visibility: hidden; }
+/* ═══ STREAMLIT CHROME (Robust Cloud Fix) ═══ */
+/* Ensure the top header area is completely transparent so our UI shows through, but the sidebar toggle remains fully interactive */
+[data-testid="stHeader"] {
+    background-color: transparent !important;
+}
+header {
+    background: transparent !important;
+}
+/* Hide only the unwanted elements (GitHub icon, deploy button, hamburger menu) */
+[data-testid="stToolbar"] {
+    visibility: hidden !important;
+    display: none !important;
+}
+[data-testid="stDecoration"] {
+    visibility: hidden !important;
+    display: none !important;
+}
+footer {
+    visibility: hidden !important;
+}
 
-/* Style the sidebar collapse arrow button to be visible and prominent */
+/* 🚀 Style the Streamlit Sidebar Toggle Arrow itself to match our Elite theme */
 [data-testid="collapsedControl"] {
     display: flex !important;
     visibility: visible !important;
@@ -87,10 +101,14 @@ header [data-testid="stToolbar"] { visibility: hidden; }
     border-radius: 0 12px 12px 0 !important;
     border: 2px solid #f97316 !important;
     box-shadow: 4px 0 15px rgba(249,115,22,0.4) !important;
-    width: 36px !important;
-    height: 60px !important;
-    top: 50% !important;
+    width: 44px !important;
+    height: 50px !important;
+    top: 30px !important;
+    left: 0px !important;
     cursor: pointer !important;
+    z-index: 999999 !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 [data-testid="collapsedControl"]:hover {
     background: linear-gradient(135deg, #f97316, #f59e0b) !important;
@@ -99,15 +117,12 @@ header [data-testid="stToolbar"] { visibility: hidden; }
 [data-testid="collapsedControl"] svg {
     color: #FFFFFF !important;
     fill: #FFFFFF !important;
+    width: 20px !important;
+    height: 20px !important;
 }
 
-/* Sidebar toggle button inside the sidebar (collapse button) */
-button[data-testid="baseButton-header"] {
-    background: rgba(249,115,22,0.15) !important;
-    border-radius: 8px !important;
-}
 .block-container {
-  padding-top: 0.5rem !important;
+  padding-top: 1.5rem !important;
   padding-bottom: 2rem !important;
   max-width: 1300px !important;
 }

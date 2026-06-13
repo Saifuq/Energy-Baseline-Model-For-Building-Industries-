@@ -660,6 +660,7 @@ def main():
 
     if weather_data:
         cached_weather = pd.concat(weather_data.values())
+        
         cached_weather.to_csv("indian_cities_weather_cache.csv", index=False)
         print(f"  ✅ [Decoupling] Streamlit weather cache saved: indian_cities_weather_cache.csv "
               f"({len(cached_weather):,} rows, {list(cached_weather.columns)})")
