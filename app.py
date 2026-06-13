@@ -30,7 +30,7 @@ st.set_page_config(
     page_title="India AI Energy Baseline Model | Saifuddin Farooqui",
     page_icon="⚡",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="expanded",  # Always show sidebar
 )
 
 # ────────────────────────────────────────────────────────────────────
@@ -72,7 +72,40 @@ html, body, * {
 }
 
 /* ═══ STREAMLIT CHROME ═══ */
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+/* Keep header visible so sidebar toggle arrow shows */
+header { visibility: visible !important; }
+header [data-testid="stToolbar"] { visibility: hidden; }
+
+/* Style the sidebar collapse arrow button to be visible and prominent */
+[data-testid="collapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+    background: linear-gradient(135deg, #0f172a, #1e3a5f) !important;
+    color: #FFFFFF !important;
+    border-radius: 0 12px 12px 0 !important;
+    border: 2px solid #f97316 !important;
+    box-shadow: 4px 0 15px rgba(249,115,22,0.4) !important;
+    width: 36px !important;
+    height: 60px !important;
+    top: 50% !important;
+    cursor: pointer !important;
+}
+[data-testid="collapsedControl"]:hover {
+    background: linear-gradient(135deg, #f97316, #f59e0b) !important;
+    box-shadow: 4px 0 20px rgba(249,115,22,0.7) !important;
+}
+[data-testid="collapsedControl"] svg {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+}
+
+/* Sidebar toggle button inside the sidebar (collapse button) */
+button[data-testid="baseButton-header"] {
+    background: rgba(249,115,22,0.15) !important;
+    border-radius: 8px !important;
+}
 .block-container {
   padding-top: 0.5rem !important;
   padding-bottom: 2rem !important;
