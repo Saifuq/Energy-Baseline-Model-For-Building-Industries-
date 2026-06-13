@@ -71,76 +71,19 @@ html, body, * {
   color: #111111;
 }
 
-/* ═══ STREAMLIT CHROME (Robust Cloud Fix) ═══ */
+/* ═══ STREAMLIT CHROME (NATIVE RESTORE) ═══ */
 
-/* Make Streamlit headers transparent so our background shows */
-[data-testid="stHeader"] {
-    background: transparent !important;
-}
-header {
-    background: transparent !important;
-}
+/* Safely hide the deploy button, top-right menu, and bottom footer using Streamlit's stable CSS classes */
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+.stDeployButton { display: none; }
 
-/* Hide only the specific top-right tools we do not want */
-[data-testid="stToolbar"] { display: none !important; visibility: hidden !important; }
-[data-testid="stDecoration"] { display: none !important; visibility: hidden !important; }
-.stDeployButton { display: none !important; visibility: hidden !important; }
-footer { display: none !important; visibility: hidden !important; }
-
-/* 🚀 FIX: The Streamlit Sidebar Toggle Arrow 
-   Streamlit recently changed their data-testid. 
-   We use a wildcard to catch both "collapsedControl" and "stSidebarCollapsedControl"
-*/
-[data-testid*="collapsedControl"],
-[data-testid*="CollapsedControl"],
-button[kind="header"] {
-    display: flex !important;
-    visibility: visible !important;
-    background: linear-gradient(135deg, #f97316, #f59e0b) !important; /* Make it BRIGHT ORANGE so it cannot be missed */
-    color: #FFFFFF !important;
-    border-radius: 8px !important;
-    border: 2px solid #FFFFFF !important;
-    box-shadow: 0 4px 15px rgba(249,115,22,0.6) !important;
-    width: 50px !important;
-    height: 50px !important;
-    top: 15px !important;
-    left: 15px !important;
-    position: fixed !important;
-    z-index: 999999 !important;
-    align-items: center !important;
-    justify-content: center !important;
-    opacity: 1 !important;
-    transition: all 0.3s ease !important;
-}
-
-[data-testid*="collapsedControl"]:hover,
-[data-testid*="CollapsedControl"]:hover,
-button[kind="header"]:hover {
-    transform: scale(1.1) !important;
-    box-shadow: 0 6px 20px rgba(249,115,22,0.9) !important;
-}
-
-/* Force the arrow icon itself to be white and large */
-[data-testid*="collapsedControl"] svg,
-[data-testid*="CollapsedControl"] svg,
-button[kind="header"] svg {
-    color: #FFFFFF !important;
-    fill: #FFFFFF !important;
-    width: 28px !important;
-    height: 28px !important;
-}
-
-/* Ensure the sidebar itself has a high z-index and proper width when open */
-[data-testid="stSidebar"] {
-    min-width: 320px !important;
-    max-width: 400px !important;
-    z-index: 9999999 !important;
-    background-color: #F8FAFC !important;
-    border-right: 2px solid #0A3D62 !important;
-}
+/* We are deliberately REMOVING all custom CSS related to 'header', 'stHeader', 
+   and 'collapsedControl'. This allows Streamlit Cloud to use its native, 
+   100% reliable default button to open and close the sidebar. */
 
 .block-container {
-  padding-top: 3.5rem !important; /* Extra padding so the button doesn't overlap title */
+  padding-top: 1rem !important;
   padding-bottom: 2rem !important;
   max-width: 1300px !important;
 }
