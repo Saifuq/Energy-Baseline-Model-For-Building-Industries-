@@ -4,6 +4,10 @@
 **[![Live Application]
 (https://energy-baseline-model-for-building-industries.streamlit.app/)]**
 
+
+[![Live Application](https://img.shields.io/badge/Live-Application-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://energy-baseline-model-for-building-industries.streamlit.app/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Saifuq)
+
 > **Supervisor:** Dr. Sivasankari Sundaram  
 > **Creator & Researcher:** Saifuddin Farooqui (BTP Research Division)
 
