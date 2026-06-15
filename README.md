@@ -1,7 +1,8 @@
 # ⚡ Energy Baseline Model for Building and Industries
 ### Premier AI-Driven Energy Orchestration & Industrial Baseline Reporting for India
 
-[![Live Application](https://img.shields.io/badge/Live_Dashboard-Launch_Streamlit-F97316?style=for-the-badge&logo=streamlit)](INSERT_YOUR_STREAMLIT_URL_HERE)
+[![Live Application](https://energy-baseline-model-for-building-industries.streamlit.app/)]
+(INSERT_YOUR_STREAMLIT_URL_HERE)
 
 > **Supervisor:** Dr. Sivasankari Sundaram  
 > **Creator & Researcher:** Saifuddin Farooqui (BTP Research Division)
